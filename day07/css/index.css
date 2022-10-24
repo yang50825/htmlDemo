@@ -275,6 +275,7 @@ body {
 }
 
 .box .content li {
+    position: relative;
     float: left;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -364,4 +365,12 @@ body {
     font-family: SimSun;
     font-size: 12px;
     color: #333333;
+}
+
+/* 课程模块 hot 定位小图 */
+.box .content li .hot {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+    width: 40px;
 }
