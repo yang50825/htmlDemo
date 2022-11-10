@@ -1,1 +1,311 @@
 /* 放index页面的样式表 */
+
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 100%;
+}
+
+/* 侧导航 */
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.banner .aside li {
+    height: 50px;
+}
+
+.banner .aside li a {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.banner .aside li a span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside li a:hover {
+    background-color: #27ba9b;
+}
+
+.banner .aside li a::after {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background: url(../images/sprites.png) -80px -110px;
+}
+
+/* 箭头部分 */
+.banner .prev,
+.banner .next {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background: url(../images/sprites.png) rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.banner .prev {
+    left: 260px;
+    background-position: 14px -60px;
+}
+
+
+.banner .next {
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+.banner ol {
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    height: 10px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background-color: #fff;
+}
+
+/* 商品样式 */
+.goods .hd {
+    height: 114px;
+    line-height: 114px;
+}
+
+.goods .hd h2 {
+    float: left;
+    height: 100%;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.goods .hd h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .hd a,
+.fresh .hd .more {
+    float: right;
+    color: #999;
+}
+
+.goods .hd a::after,
+.fresh .hd .more::after {
+    display: inline-block;
+    margin-left: 13px;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background: url(../images/sprites.png) 0 -110px;
+    vertical-align: middle;
+}
+
+.goods .bd li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.goods .bd li img {
+    width: 100%;
+}
+
+.goods .bd li h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price-box {
+    color: #9a2e1f;
+    font-size: 17px;
+}
+
+.price-box span {
+    font-size: 23px;
+}
+
+.goods .bd li .news {
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 2px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    line-height: 24px;
+}
+
+/* 生鲜 */
+.fresh .hd {
+    height: 96px;
+    line-height: 96px;
+}
+
+.fresh .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.fresh .hd .more {
+    float: right;
+}
+
+.fresh .hd ul {
+    float: right;
+    margin-right: 65px;
+}
+
+.fresh .hd li {
+    float: left;
+}
+
+.fresh .hd li a {
+    margin-left: 6px;
+    padding: 2px 7px;
+}
+
+.fresh .hd li a:hover {
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+
+.fresh .bd .left {
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: pink;
+}
+
+.fresh .bd .right {
+    float: right;
+    width: 1000px;
+    height: 610px;
+}
+
+.fresh .bd .right ul {
+    margin-left: 8px;
+}
+
+.fresh .bd .right li {
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-right: 8px;
+    width: 242px;
+    height: 304px;
+    border: solid 2px #fff;
+    transition: all 0.3s;
+}
+
+.fresh .bd .right li:nth-child(-n + 3) {
+    margin-bottom: 3px;
+}
+
+.fresh .bd .right li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fresh .bd .right li img {
+    margin: 8px 29px;
+    width: 184px;
+    height: 184px;
+}
+
+.fresh .bd .right li h3 {
+    margin: 0 auto;
+    width: 173px;
+    height: 54px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fresh .bd .right li .price-box {
+    width: 173px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.fresh .bd .right li:hover {
+    border: solid 2px #27ba9b;
+}
+
+.fresh .bd .right li:hover .shade {
+    display: block;
+}
+
+.fresh .bd .right li .shade {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+    width: 240px;
+    height: 82px;
+    background-color: #27ba9b;
+    text-align: center;
+}
+
+.fresh .shade h4 {
+    margin: 0 auto;
+    padding: 7px;
+    width: 125px;
+    border-bottom: 2px solid #a9dbcc;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.fresh .shade .more {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+}
